@@ -1,0 +1,11 @@
+- name: Clone Git repo
+  git:
+    repo: "{{ git_repo }}"
+    dest: "{{ clone_dir }}"
+    version: main
+    update: yes
+
+- name: Run Docker Compose
+  command: docker-compose up -d
+  args:
+    chdir: "{{ clone_dir }}/ainterv"

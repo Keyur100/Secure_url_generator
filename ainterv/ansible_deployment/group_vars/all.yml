@@ -1,0 +1,6 @@
+# This file contains variables that apply to all hosts in your inventory.
+# It is a good practice to keep these separate from the playbook itself.
+
+---
+git_repo: https://github.com/Keyur100/Secure_url_generator.git
+clone_dir: /home/{{ ansible_user }}/Secure_url_generator

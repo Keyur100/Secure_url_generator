@@ -1,0 +1,6 @@
+- name: Configure and deploy Secure URL Generator
+  hosts: all
+  become: true
+  roles:
+    - setup
+    - deploy
